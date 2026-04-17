@@ -1,6 +1,6 @@
 # PV_suitability_LAZIO
-Multi-criteria spatial analysis ti identify suitable areas for utility scale solar PV installationsin the Lazio region (Central Italy), developed using GEE and open geospatial datasets.
-workflow replicates and automates the environmental screening process typically performed during renewable energy project origination and envirinmental permititng in Italy
+Multi-criteria spatial analysis to identify suitable areas for utility scale solar PV installations in the Lazio region (Central Italy), developed using GEE and open geospatial datasets.
+workflow replicates and automates the environmental screening process typically performed during renewable energy project origination and environmental permititng in Italy
 
 
 ### Datasets
@@ -22,20 +22,30 @@ workflow replicates and automates the environmental screening process typically 
 | Wetlands | Excluded | Habitat protection |
 | Protected areas | Excluded | Natura 2000, National/Regional Parks, Ramsar |
 
-Protection areas coverage (WDPA)
+### Protection areas coverage (WDPA)
+
 The WDPA layer used in this analysis covers all IUCN-classified 
 protected areas, including in the Italian context:
 - national and regional parks
 - natural states and regional reserves
 - Natura 2000 network: SACs and SPAs
 
-Results
-Green areas on the map represent locations meeteng all criteria simultaneously
+### Results
 
-Context: 
+Green areas on the map represent locations meeting all criteria simultaneously
+Blue areas are the protected areas
+Key exclusions:
+
+- **Rome metropolitan area** - urban land cover
+- **Appenine ridge** - slopes
+- **Lakes Bracciano, Bolsena** - water bodies + protected areas
+- **Circeo national park** - WDPA protected area
+
+### Context: 
+
 this analysis mirrors the preliminary environmental screening carried out during renewable energy project origination in Italy
 
-Tools& libraries
+### Tools& libraries
 - Google earth engine (Javascript API)
 - ESA worldcover v200
 - USGS SRTM GL1
